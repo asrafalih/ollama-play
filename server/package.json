@@ -1,6 +1,7 @@
 {
   "name": "server",
   "private": true,
+  "description": "Express API that validates requests and proxies chat/generate calls to Ollama with SSE streaming.",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",

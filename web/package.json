@@ -2,6 +2,7 @@
   "name": "web",
   "private": true,
   "version": "0.0.0",
+  "description": "Vite + React + Tailwind UI for the Ollama playground.",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,13 +1,20 @@
 {
-  "name": "ollama-test",
+  "name": "ollama-play",
+  "version": "0.0.0",
   "private": true,
+  "description": "Monorepo: Express proxy to Ollama plus a React (Vite) UI for chat, vision, image generation, and a Movie Shorts workflow.",
   "workspaces": [
     "server",
     "web"
   ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "concurrently -n server,web -c blue,green \"npm run dev -w server\" \"npm run dev -w web\"",
-    "build": "npm run build -w server && npm run build -w web"
+    "build": "npm run build -w server && npm run build -w web",
+    "start": "npm run start -w server",
+    "preview": "npm run preview -w web"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
